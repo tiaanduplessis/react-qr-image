@@ -1,0 +1,37 @@
+{
+  "name": "react-qr-image",
+  "description": "Generate a QR Image for your React app",
+  "version": "1.0.1",
+  "main": "dist/react-qr-image.js",
+  "umd:main": "dist/react-qr-image.umd.js",
+  "module": "dist/react-qr-image.m.js",
+  "source": "src/index.js",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "react",
+    "qr",
+    "qr-code"
+  ],
+  "scripts": {
+    "build": "microbundle -o dist/ --sourcemap false --no-compress --jsx React.createElement",
+    "dev": "microbundle watch -o dist/ --sourcemap false --no-compress --jsx React.createElement",
+    "lint": "standard --fix src/*.js"
+  },
+  "dependencies": {
+    "qr-image-color": "^3.2.1"
+  },
+  "peerDependencies": {
+    "react": "^16"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "microbundle": "^0.11.0",
+    "standard": "^14.3.1"
+  },
+  "standard": {
+    "parser": "babel-eslint"
+  }
+}
