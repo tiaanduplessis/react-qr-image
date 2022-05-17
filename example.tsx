@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom";
 
-import QRImage from 'react-qr-image'
+import QRImage from "react-qr-image";
 
 function App() {
   return (

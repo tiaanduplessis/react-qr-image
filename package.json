@@ -1,14 +1,14 @@
 {
   "name": "react-qr-image",
-  "description": "Generate a QR Image for your React app",
+  "description": "A React component for a QR image generated from text",
   "version": "1.0.2",
-  "main": "dist/react-qr-image.js",
-  "module": "dist/react-qr-image.m.js",
-  "source": "src/index.js",
-  "license": "MIT",
+  "types": "dist/index.d.ts",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
   "files": [
     "dist"
   ],
+  "license": "MIT",
   "keywords": [
     "react-qr",
     "react-qr-code",
@@ -17,17 +17,24 @@
     "qr-code"
   ],
   "scripts": {
-    "build": "microbundle -o dist/ --sourcemap false --no-compress --jsx React.createElement",
-    "dev": "microbundle watch -o dist/ --sourcemap false --no-compress --jsx React.createElement",
-    "lint": "standard --fix src/*.js"
+    "build": "rm -rf dist && tsup src/index.tsx --format cjs,esm --dts --target node16",
+    "prepublishOnly": "npm run build",
+    "types:check": "tsc --noEmit",
+    "format": "pretty-quick --ignore-path .gitignore"
   },
   "dependencies": {
     "qr-image-color": "^3.2.1"
   },
   "peerDependencies": {
-    "react": "^16"
+    "react": ">= 16.3"
   },
   "devDependencies": {
-    "microbundle": "^0.15.0"
+    "@types/react": "^18.0.9",
+    "microbundle": "^0.15.0",
+    "prettier": "^2.6.2",
+    "pretty-quick": "^3.1.3",
+    "react": "^18.1.0",
+    "tsup": "^5.12.8",
+    "typescript": "^4.6.4"
   }
 }

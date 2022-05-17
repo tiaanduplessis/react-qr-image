@@ -3,33 +3,54 @@
 </div>
 
 # react-qr-image
+
 [![package version](https://img.shields.io/npm/v/react-qr-image.svg?style=flat-square)](https://npmjs.org/package/react-qr-image)
 [![package downloads](https://img.shields.io/npm/dm/react-qr-image.svg?style=flat-square)](https://npmjs.org/package/react-qr-image)
 [![standard-readme compliant](https://img.shields.io/badge/readme%20style-standard-brightgreen.svg?style=flat-square)](https://github.com/RichardLitt/standard-readme)
 [![package license](https://img.shields.io/npm/l/react-qr-image.svg?style=flat-square)](https://npmjs.org/package/react-qr-image)
 [![make a pull request](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-> Generate a QR Image for your React app
+A React component for a QR image generated from text.
 
-## Table of Contents
+## 📖 Table of Contents
 
-- [About](#about)
-- [Usage](#usage)
-- [Install](#install)
-- [Contribute](#contribute)
-- [License](#License)
+- [react-qr-image](#react-qr-image)
+  - [📖 Table of Contents](#-table-of-contents)
+  - [⚙️ Install](#️-install)
+  - [📖 Usage](#-usage)
+  - [📚 API](#-api)
+  - [💬 Contributing](#-contributing)
+  - [🪪 License](#-license)
 
-## About
+## ⚙️ Install
 
-Build on the top of the excellent [qr-image-color](https://github.com/bockoblur/qr-image-color) package.
+Install the package locally within you project folder with your package manager:
 
-## Usage
+With `npm`:
+
+```sh
+npm install react-qr-image
+```
+
+With `yarn`:
+
+```sh
+yarn add react-qr-image
+```
+
+With `pnpm`:
+
+```sh
+pnpm add react-qr-image
+```
+
+## 📖 Usage
 
 ```js
 import React from "react";
 import ReactDOM from "react-dom";
 
-import QRImage from 'react-qr-image'
+import QRImage from "react-qr-image";
 
 function App() {
   return (
@@ -44,28 +65,18 @@ function App() {
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
-
 ```
 
 [![Edit wispy-haze-cvm06](https://codesandbox.io/static/img/play-codesandbox.svg)](https://codesandbox.io/s/wispy-haze-cvm06?fontsize=14)
 
-## Install
+## 📚 API
 
-This project uses [node](https://nodejs.org) and [npm](https://www.npmjs.com).
+For all configuration options, please see the [API docs](https://paka.dev/npm/react-qr-image).
 
-```sh
-$ npm install react-qr-image
-$ # OR
-$ yarn add react-qr-image
-```
+## 💬 Contributing
 
-## Contribute
+Got an idea for a new feature? Found a bug? Contributions are welcome! Please [open up an issue](https://github.com/tiaanduplessis/react-qr-image/issues) or [make a pull request](https://makeapullrequest.com/).
 
-1. Fork it and create your feature branch: `git checkout -b my-new-feature`
-2. Commit your changes: `git commit -am "Add some feature"`
-3. Push to the branch: `git push origin my-new-feature`
-4. Submit a pull request
+## 🪪 License
 
-## License
-
-MIT
+[MIT © Tiaan du Plessis](./LICENSE)
