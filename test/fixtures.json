@@ -1,0 +1,22 @@
+{
+  "empty": {
+    "width": 145,
+    "height": 145,
+    "sha256": "e67e89348570e35ff9bec637582e1c89cddde0de168d9113f40150d708e78966"
+  },
+  "defaults": {
+    "width": 145,
+    "height": 145,
+    "sha256": "00f1e7354b84ab8ac824832f2237ae9fea60438788524f18b95b0638d77433a8"
+  },
+  "custom": {
+    "width": 62,
+    "height": 62,
+    "sha256": "3bdf20531d2b7c0230c7c4b45246984d1fe676c807d88339d32b897228908340"
+  },
+  "transparent": {
+    "width": 145,
+    "height": 145,
+    "sha256": "5d69b68a65b2a2bebc5488cda09a6e1f9c6a78f3f1761a2f0166f010713877d3"
+  }
+}
