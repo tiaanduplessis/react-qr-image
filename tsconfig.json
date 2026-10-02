@@ -8,5 +8,6 @@
     "strictNullChecks": true,
     "jsx": "react",
     "allowSyntheticDefaultImports": true
-  }
+  },
+  "include": ["src", "test/types.tsx"]
 }

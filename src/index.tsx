@@ -1,4 +1,4 @@
-import React, { useMemo, ReactNode } from "react";
+import React, { useMemo, ReactNode, ReactElement } from "react";
 import qr, { image_type } from "qr-image-color";
 
 const getTextFromChildren = (children: any) => {
@@ -49,7 +49,7 @@ const ReactQRImage = ({
   background,
   children,
   ...props
-}: QRImageProps) => {
+}: QRImageProps): ReactElement => {
   const options = useMemo(
     () => ({
       type: "png" as image_type,

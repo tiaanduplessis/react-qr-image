@@ -77,6 +77,28 @@ For all configuration options, please see the [API docs](https://paka.dev/npm/re
 
 Got an idea for a new feature? Found a bug? Contributions are welcome! Please [open up an issue](https://github.com/tiaanduplessis/react-qr-image/issues) or [make a pull request](https://makeapullrequest.com/).
 
+### Development
+
+Use Node.js 22 or 24 and pnpm 10.34.6 for development. The generated library
+still targets Node.js 16 and keeps CommonJS, ESM, and TypeScript declaration
+entry points.
+
+```sh
+pnpm install --frozen-lockfile --ignore-scripts
+pnpm run types:check
+pnpm test
+pnpm run format:check
+```
+
+The test suite renders QR images locally through both module formats and checks
+PNG pixel fixtures, child text handling, image props, and the existing type
+contract. No external QR service is contacted. `example.tsx` is a standalone
+browser usage example, so it is excluded from the library type-check.
+
+The esbuild override keeps the build dependency on 0.28.1 because tsup's declared
+0.27.x range includes the affected Windows development-server versions in
+[GHSA-g7r4-m6w7-qqqr](https://github.com/advisories/GHSA-g7r4-m6w7-qqqr).
+
 ## 🪪 License
 
 [MIT © Tiaan du Plessis](./LICENSE)
